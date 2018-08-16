@@ -1,0 +1,12 @@
+server:
+  port: 1891
+spring:
+  application:
+    name: service-a
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://eureka-server:1881/eureka/
+logging:
+  config: classpath:spring/logback.xml

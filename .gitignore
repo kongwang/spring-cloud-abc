@@ -1,0 +1,14 @@
+/config-server/mvnw.cmd
+/config-server/.mvn
+/config-server/config-server.iml
+/config-server/mvnw
+/eureka-server/mvnw.cmd
+/eureka-server/.mvn
+/eureka-server/target
+/eureka-server/mvnw
+/service-a/mvnw.cmd
+/service-a/.mvn
+/service-a/target
+/service-a/mvnw
+/logs
+/.idea
