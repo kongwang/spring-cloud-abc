@@ -7,7 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kongwang/spring-cloud-abc-config-repository.git
+          uri: https://github.com/kongwang/spring-cloud-abc-config-repository
+          search-paths: /**
+          basedir: ./config-repo-cache
+      label: master
 eureka:
   client:
     enabled: true
