@@ -13,7 +13,7 @@
 ###################初始化###############################
 cd $(cd "$(dirname "$0")"; pwd)/../
 SHELL_PROG=./server.sh
-JAR_NAME=eureka-server-0.0.1-SNAPSHOT.jar
+JAR_NAME=eureka-server*.jar
 #判断程序启动成功的标志（在MAIN_CLASS中输出的），如未输出就认为启动失败
 START_FLAG='server is ready now'
 #启动的超时时间，单位：秒。超时就认为启动失败
