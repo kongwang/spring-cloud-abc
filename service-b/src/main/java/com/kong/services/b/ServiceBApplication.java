@@ -1,4 +1,4 @@
-package com.kong.services.a;
+package com.kong.services.b;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,14 +9,14 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableEurekaClient
-@SpringBootApplication
-@EnableFeignClients
 //@EnableHystrix
-public class ServiceAApplication {
-    private static Logger logger = LoggerFactory.getLogger("ServiceAApplication");
+@EnableFeignClients
+@SpringBootApplication
+public class ServiceBApplication {
 
+    private static Logger logger = LoggerFactory.getLogger("ServiceBApplication");
     public static void main(String[] args) {
-        SpringApplication.run(ServiceAApplication.class, args);
+        SpringApplication.run(ServiceBApplication.class, args);
 
         logger.info("*******************************");
         logger.info("***** server is ready now *****");

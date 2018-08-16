@@ -1,5 +1,7 @@
 package com.kong.services.a.controller;
 
+import com.kong.services.a.service.ServiceB;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     private static final String KEY_A = "a";
-
+    @Autowired
+    ServiceB serviceB;
     @Value("${value.a}")
     private String valueA;
 
@@ -34,5 +37,10 @@ public class HelloController {
             return valueA;
         }
         return valueB;
+    }
+
+    @GetMapping("/toB")
+    public String sayHelloToB(String name) {
+        return serviceB.sayHello(name);
     }
 }

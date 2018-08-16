@@ -1,5 +1,5 @@
 server:
-  port: 1891
+  port: 1892
 eureka:
   client:
     enabled: true
@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://eureka-server:1881/eureka/
 spring:
   application:
-    name: service-a
+    name: service-b
   profiles:
     active: dev
   zipkin:
