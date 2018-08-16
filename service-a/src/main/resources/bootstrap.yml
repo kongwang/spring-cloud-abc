@@ -18,6 +18,7 @@ spring:
         service-id: config-server
 logging:
   config: classpath:spring/logback.xml
+
 management:
   endpoints:
     web:
