@@ -1,0 +1,25 @@
+server:
+  port: 1883
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://eureka-server:1881/eureka/
+spring:
+  application:
+    name: gateway
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 134.175.38.40
+  sleuth:
+    sampler:
+      percentage: 1.0
+  cloud:
+    config:
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+logging:
+  config: classpath:spring/logback.xml
