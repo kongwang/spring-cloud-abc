@@ -10,8 +10,8 @@ spring:
     name: service-a
   profiles:
     active: dev
-  zipkin:
-    base-url: http://zipkin-server:9411
+  rabbitmq:
+    host: 134.175.38.40
   sleuth:
     sampler:
       percentage: 1.0
