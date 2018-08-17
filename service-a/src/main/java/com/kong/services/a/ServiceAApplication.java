@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @SpringBootApplication
 @EnableFeignClients
-//@EnableHystrix
+@EnableHystrix
 public class ServiceAApplication {
     private static Logger logger = LoggerFactory.getLogger("ServiceAApplication");
 
