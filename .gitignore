@@ -12,3 +12,14 @@
 /service-a/mvnw
 /logs
 /.idea
+/service-b/target
+/config-repo-cache
+/gateway/mvnw.cmd
+/gateway/.mvn
+/gateway/target
+/gateway/gateway.iml
+/gateway/mvnw
+/hystrix-dashboard/mvnw.cmd
+/hystrix-dashboard/.mvn
+/hystrix-dashboard/target
+/hystrix-dashboard/mvnw

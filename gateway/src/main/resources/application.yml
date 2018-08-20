@@ -2,9 +2,9 @@ spring:
   cloud:
     gateway:
       routes:
-          id: service-a
+        - id: service-a
           uri: lb://service-a
           predicates:
-            - Path=/a/**
+           - Path=/a/**
           filters:
-            - StripPrefix=1
+          - StripPrefix=1

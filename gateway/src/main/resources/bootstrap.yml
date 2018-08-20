@@ -23,3 +23,5 @@ spring:
         service-id: config-server
 logging:
   config: classpath:spring/logback.xml
+  level:
+    org.springframework.cloud.gateway: debug

@@ -1,0 +1,18 @@
+server:
+  port: 1884
+spring:
+  application:
+    name: hystrix-dashboard
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://eureka-server:1881/eureka/
+turbine:
+  app-config: service-a,service-b
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+#  instanceUrlSuffix:
+#    default: actuator/hystrix.stream
