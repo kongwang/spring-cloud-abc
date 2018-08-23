@@ -5,6 +5,10 @@ eureka:
     enabled: true
     service-url:
       defaultZone: http://eureka-server:1881/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 119.29.147.26 #為了兩台云服務器能通訊，線上別這麼用
+    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
 spring:
   application:
     name: gateway
